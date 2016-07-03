@@ -1,12 +1,17 @@
-## Customize the test machine
+general:
+    artifacts:
+        - /home/ubuntu/android-app-test/app/build/outputs/apk/
+
+machine:
+    environment:
+        ANDROID_HOME: /usr/local/android-sdk-linux
+
 dependencies:
-  pre:
-    - echo y | sudo /usr/local/android-sdk-linux/tools/android update sdk --no-ui --all --filter extra-android-m2repository
-    - echo y | sudo /usr/local/android-sdk-linux/tools/android update sdk --no-ui --all
+    override:
+        - echo y | android update sdk --no-ui --all --filter tools,platform-tools,build-tools-21.1.2,android-21,extra-google-m2repository,extra-google-google_play_services,extra-android-support
+        - ANDROID_HOME=/usr/local/android-sdk-linux ./gradlew dependencies
 
 test:
     override:
-       - cd MyApplication/
-       - ./gradlew build
-    post:
-      - cp -r MyApplication/app/build/outputs $CIRCLE_ARTIFACTS
+        - (./gradlew assemble):
+            timeout: 360
