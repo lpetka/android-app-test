@@ -1,14 +1,8 @@
 ## Customize the test machine
-environment:
-          ANDROID_HOME: /usr/local/android-sdk-linux
-
 dependencies:
   pre:
     - echo y | sudo /usr/local/android-sdk-linux/tools/android update sdk --no-ui --all --filter extra-android-m2repository
     - echo y | sudo /usr/local/android-sdk-linux/tools/android update sdk --no-ui --all
-
-    - wget $DEBUG_KEYSTORE_URL
-    - openssl des3 -d -pass env:DEBUG_KEYSTORE_PASSWORD -salt -in debug.keystore.encrypted  -out ~/.android/debug.keystore
 
 test:
     override:
