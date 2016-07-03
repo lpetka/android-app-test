@@ -6,6 +6,7 @@ dependencies:
 
 test:
     override:
+       - cd MyApplication/
        - ./gradlew build
     post:
       - cp -r MyApplication/app/build/outputs $CIRCLE_ARTIFACTS
