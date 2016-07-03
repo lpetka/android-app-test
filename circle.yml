@@ -2,4 +2,4 @@
 test:
   override:
     - ./gradlew assembleRelease
-    - cp -r project-name/build/outputs $CIRCLE_ARTIFACTS
+    - cp -r android-app-test/build/outputs $CIRCLE_ARTIFACTS
