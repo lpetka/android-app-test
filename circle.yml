@@ -1,5 +1,5 @@
 ## Customize the test machine
 test:
   override:
-    - ./gradlew assembleRelease
+    - ./gradlew build
     - cp -r android-app-test/MyApplication/app/build/outputs $CIRCLE_ARTIFACTS
