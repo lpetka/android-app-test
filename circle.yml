@@ -4,8 +4,7 @@ general:
 
 machine:
     java:
-        version:
-            oraclejdk8
+        version: openjdk8
 
 machine:
     environment:
