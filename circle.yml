@@ -3,6 +3,11 @@ general:
         - /home/ubuntu/android-app-test/app/build/outputs/apk/
 
 machine:
+    java:
+        version:
+            oraclejdk8
+
+machine:
     environment:
         ANDROID_HOME: /usr/local/android-sdk-linux
 
