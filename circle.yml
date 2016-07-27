@@ -5,8 +5,6 @@ general:
 machine:
     environment:
         ANDROID_HOME: /usr/local/android-sdk-linux
-    java:
-        version: oraclejdk8
 
 dependencies:
     override:
