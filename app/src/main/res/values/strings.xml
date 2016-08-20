@@ -19,7 +19,7 @@
     <string name="prompt_password">Password</string>
     <string name="action_sign_in">Sign in</string>
     <string name="action_sign_in_short">Sign in</string>
-    <string name="err_login">Wrong password or email. Try again</string>
+    <string name="err_login">Wrong password or email. Try again.</string>
     <string name="txt_suname_app">sport events organizer app</string>
 
     <!-- EventsScreen strings -->
