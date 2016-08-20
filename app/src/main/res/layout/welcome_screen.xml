@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/splash">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/dsds"
+                android:textColor="@color/custom_button_text"
+                android:text="@string/app_name"
+                android:textSize="32sp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+
+                android:layout_marginTop="@dimen/screen_margin_big"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/screen_margin_big">
+
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="@dimen/default_button_width"
+                android:layout_height="wrap_content"
+                android:textColor="@color/custom_button_text"
+                android:background="@color/custom_booking_state_normal"
+                android:text="Login"
+                android:textAllCaps="true"
+                android:layout_marginBottom="@dimen/screen_margin_half"/>
+
+            <Button
+                android:id="@+id/register_btn"
+                android:layout_width="@dimen/default_button_width"
+                android:layout_height="@dimen/default_button_height"
+                android:textColor="@color/custom_button_text"
+                android:background="@color/custom_booking_state_normal"
+                android:textAllCaps="true"
+                android:text="Register"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
