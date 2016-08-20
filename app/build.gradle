@@ -54,13 +54,13 @@ android {
             {
                 release {
                     minifyEnabled true
-                    proguardFile getDefaultProguardFile('proguard-android.txt')
+                    proguardFile getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
                     multiDexEnabled true
                 }
                 debug {
                     debuggable true
                     minifyEnabled false
-                    proguardFile getDefaultProguardFile('proguard-android.txt')
+                    proguardFile getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
                     multiDexEnabled true
                 }
             }
