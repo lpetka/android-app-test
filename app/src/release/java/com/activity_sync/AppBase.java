@@ -2,8 +2,6 @@ package com.activity_sync;
 
 import android.app.Application;
 import android.content.Context;
-import android.support.multidex.MultiDex;
-import timber.log.Timber;
 
 public class AppBase extends Application
 {
@@ -11,7 +9,7 @@ public class AppBase extends Application
     public void onCreate()
     {
         super.onCreate();
-        Timber.d("Activity Sync Debug");
+        Timber.d("Activity Sync");
     }
 
     @Override
