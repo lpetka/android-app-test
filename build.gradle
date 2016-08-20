@@ -18,7 +18,6 @@ allprojects {
     repositories {
         jcenter()
         mavenCentral()
-        maven { url 'https://repo.eclipse.org/content/repositories/paho-releases/' }
         maven { url 'https://maven.fabric.io/public' }
         maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
         maven { url "https://jitpack.io" }
