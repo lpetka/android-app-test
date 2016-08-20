@@ -55,14 +55,12 @@ android {
                 release {
                     minifyEnabled true
                     proguardFile getDefaultProguardFile('proguard-android.txt')
-                    proguardFile 'proguard.cfg'
                     multiDexEnabled true
                 }
                 debug {
                     debuggable true
                     minifyEnabled false
                     proguardFile getDefaultProguardFile('proguard-android.txt')
-                    proguardFile 'proguard.cfg'
                     multiDexEnabled true
                 }
             }
