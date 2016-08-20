@@ -9,6 +9,9 @@ machine:
 machine:
     environment:
         ANDROID_HOME: /usr/local/android-sdk-linux
+        JAVA7_HOME: /usr/lib/jvm/java-7-openjdk-amd64
+        JAVA8_HOME: /usr/lib/jvm/java-8-openjdk-amd64
+        JAVA_HOME: /usr/lib/jvm/java-8-openjdk-amd64
 
 dependencies:
     override:
